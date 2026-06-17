@@ -144,7 +144,7 @@ El objetivo es que el sitio permanezca como un recuerdo digital accesible para M
 
 ## 📝 Bitácora
 
-### Día 1
+## Día 1
 
 * Se creó la estructura inicial del proyecto.
 * Se creó el repositorio en GitHub.
@@ -152,6 +152,47 @@ El objetivo es que el sitio permanezca como un recuerdo digital accesible para M
 * Se configuró Nginx.
 * Se configuró SSL.
 * Se publicó la primera versión de marayvictor.com.
+
+## Día 2
+
+### Cambios realizados
+
+* Se añadió la sección "Nuestra Historia".
+* Se agregó fotografía principal de Mara y Víctor.
+* Se creó una línea de tiempo inicial:
+
+  * 2023 - Nos conocimos
+  * 2024 - Primera cita
+  * 2025 - Compromiso
+  * 2026 - Nuestra boda
+* Se implementaron animaciones suaves al hacer scroll.
+* Se mejoró la experiencia móvil (Mobile First).
+* Se agregaron separadores visuales decorativos.
+* Se incorporó una nueva propuesta de identidad visual basada en:
+
+  * Verde Olivo
+  * Marfil (Ivory)
+  * Burgundy
+  * Champagne
+  * Dorado Suave
+
+### Resultado
+
+El sitio dejó de ser una landing page básica y comenzó a funcionar como una invitación digital de boda con narrativa visual.
+
+### Próximos pasos
+
+* Refinar Timeline Premium
+* Diseñar sección de Eventos
+* Incorporar información real de ceremonia y recepción
+* Galería fotográfica
+* RSVP funcional
+* Integración de mapas
+
+
+
+
+
 
 Primera publicación exitosa 🎉
 

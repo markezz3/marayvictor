@@ -269,3 +269,48 @@ SSL = Let's Encrypt
 Proveedor DNS = GoDaddy
 
 Proveedor VPS = Vultr
+
+## Actualizacion 17 JUN 26
+
+### Estado funcional actual
+
+Versión actual:
+
+V2 / V3 Inicial
+
+Secciones implementadas:
+
+* Hero principal
+* Cuenta regresiva
+* Nuestra Historia
+* Timeline
+* Frase principal
+* Información del evento (placeholder)
+* RSVP (placeholder)
+* Footer
+
+Archivos activos:
+
+index.html
+
+assets/css/style.css
+
+assets/js/countdown.js
+
+assets/js/main.js
+
+Imágenes utilizadas:
+
+assets/img/hero.jpg
+(Fotografía del anillo)
+
+assets/img/historia.jpg
+(Fotografía de Mara y Víctor)
+
+Enfoque de desarrollo:
+
+Mobile First
+
+Objetivo principal:
+
+Crear una invitación digital premium optimizada para dispositivos móviles.

@@ -310,6 +310,35 @@ Sitios premium de bodas e invitaciones digitales.
 * Google Maps
 * Galería
 
+## Identidad visual definida (Junio 2026)
+
+Paleta aprobada por los novios:
+
+* Verde Olivo
+* Marfil (Ivory)
+* Burgundy / Vino Profundo
+* Champagne
+* Dorado Suave
+
+Concepto visual:
+
+* Elegante
+* Atemporal
+* Romántico
+* Femenino
+* Sofisticado
+* Natural
+* Moderno
+
+Inspiración visual:
+
+* Invitaciones premium de boda
+* Estilo europeo
+* Follaje verde olivo
+* Velas cálidas
+* Detalles dorados discretos
+* Diseño Mobile First
+
 ---
 
 # Nota para futuras sesiones
@@ -344,3 +373,19 @@ ya que el contenido es sobrescrito durante cada despliegue.
 Junio 2026
 
 Primer despliegue exitoso de https://marayvictor.com 💍
+
+
+Última sesión completada:
+Día 2
+
+Estado:
+Sitio funcional en desarrollo local.
+
+Pendiente de despliegue:
+Timeline Premium
+Eventos
+Galería
+RSVP funcional
+
+Próximo objetivo:
+Diseñar sección de Eventos con identidad visual definitiva.
