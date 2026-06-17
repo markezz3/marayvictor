@@ -1,0 +1,174 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background: #f7f4ef;
+    color: #1a1a1a;
+}
+
+.hero {
+    position: relative;
+    min-height: 100vh;
+    background: url('../img/hero.jpg') center center/cover no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, .45);
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    color: white;
+    padding: 20px;
+}
+
+.hero h1 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 5rem;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+.frase {
+    font-size: 1.1rem;
+    letter-spacing: 2px;
+    margin-bottom: 30px;
+}
+
+.fecha {
+    font-size: 1.4rem;
+    margin-bottom: 15px;
+}
+
+.ubicacion {
+    margin-bottom: 35px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 14px 30px;
+    border: 1px solid #d4af37;
+    color: white;
+    text-decoration: none;
+    transition: .3s;
+}
+
+.btn:hover {
+    background: #d4af37;
+}
+
+.countdown-section {
+    padding: 100px 20px;
+    text-align: center;
+}
+
+.countdown-section h2 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 3rem;
+    margin-bottom: 40px;
+}
+
+.countdown {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.box {
+    background: white;
+    width: 130px;
+    padding: 25px;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, .08);
+}
+
+.box span {
+    display: block;
+    font-size: 2.5rem;
+    color: #d4af37;
+    font-weight: 600;
+}
+
+.mensaje {
+    padding: 100px 30px;
+    text-align: center;
+    max-width: 900px;
+    margin: auto;
+}
+
+.mensaje h2 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.mensaje p {
+    line-height: 1.8;
+}
+
+.proximamente {
+    padding: 50px 20px 120px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.card {
+    background: white;
+    padding: 40px 20px;
+    text-align: center;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, .08);
+}
+
+.card h3 {
+    margin-bottom: 10px;
+    color: #d4af37;
+}
+
+footer {
+    background: #111;
+    color: white;
+    text-align: center;
+    padding: 60px 20px;
+}
+
+footer h2 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+@media(max-width:768px) {
+
+    .hero h1 {
+        font-size: 3rem;
+    }
+
+    .fecha {
+        font-size: 1.1rem;
+    }
+
+    .box {
+        width: 140px;
+    }
+
+}
