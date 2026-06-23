@@ -28,7 +28,7 @@
             <p class="frase">
                 Nuestro para siempre comienza aquí.
             </p>
-
+            <!--
             <div class="fecha">
                 Domingo<br>
                 18 de Octubre de 2026
@@ -37,7 +37,7 @@
             <div class="ubicacion">
                 Monterrey, Nuevo León
             </div>
-
+-->
             <a href="#countdown" class="btn">
                 Descubrir
             </a>
@@ -78,9 +78,9 @@
         </div>
 
     </section>
-<div class="ornament">
-    ✦ ✦ ✦
-</div>
+    <div class="ornament">
+        ✦ ✦ ✦
+    </div>
     <section class="mensaje">
 
         <h2>Con mucha alegría</h2>
@@ -90,27 +90,24 @@
         </p>
 
     </section>
-<div class="ornament">
-    ✦ ✦ ✦
-</div>
+    <div class="ornament">
+        ✦ ✦ ✦
+    </div>
     <section class="historia reveal">
 
         <div class="section-header">
-            <h2>Nuestra Historia</h2>
+            <h2>Sobre Nosotros</h2>
         </div>
-        <img src="assets/img/historia.jpg" alt="Mara y Víctor" class="historia-img">
+        <img src="assets/img/sobrenosotros.jpg" alt="Mara y Víctor" class="historia-img">
         <div class="historia-texto">
 
             <p>
-                A veces las mejores historias comienzan
-                cuando menos lo esperamos.
-                
-                Lo que inició como un encuentro,
-                se convirtió en una aventura llena de amor,
-                complicidad y sueños compartidos.
-                
-                Hoy celebramos el inicio
-                de nuestro para siempre.
+                Todo comenzo en una conversación en el gimnasio
+                del trabajo. Con el tiempo, descubrimos una
+                conexión basada en el amor, el respeto y los
+                valores que compartimos.
+                Con mucha ilusión, los invitamos a acompañrnos
+                en la celebración del inicio de nuestra vida juntos.
             </p>
 
             <p>
@@ -122,9 +119,9 @@
         </div>
 
     </section>
-<div class="ornament">
-    ✦ ✦ ✦
-</div>
+    <div class="ornament">
+        ✦ ✦ ✦
+    </div>
     <section class="timeline reveal">
 
         <div class="section-header">
@@ -188,7 +185,7 @@
         </div>
 
     </section>
-
+    <!-- Tarjeta temporal
     <section class="quote reveal">
 
         <span class="line"></span>
@@ -200,19 +197,19 @@
         <span class="line"></span>
 
     </section>
-
+-->
     <section class="evento reveal">
 
         <div class="section-header">
-            <h2>El Gran Día</h2>
+            <h2>Nuestra Boda</h2>
         </div>
 
         <div class="evento-fecha">
 
-            <span>Domingo</span>
+            <span>Te esperamos para celebrar nuestro amor este domingo,</span>
 
             <strong>
-                18 de Octubre de 2026
+                18 de Octubre de 2026 a las 20:00 hrs.
             </strong>
 
             <span>
@@ -224,7 +221,7 @@
     </section>
 
     <section class="cards-evento reveal">
-
+        <!--"RESERVADO PARA LA CEREMONIA, SE PUEDE DESCOMENTAR CUANDO SE TENGA INFORMACIÓN"
         <div class="evento-card">
 
             <h3>Ceremonia</h3>
@@ -234,19 +231,94 @@
             </p>
 
         </div>
-
+-->
         <div class="evento-card">
+
+            <div class="evento-icon">
+                🥂
+            </div>
 
             <h3>Recepción</h3>
 
-            <p>
-                Información próximamente
+            <div class="venue-card">
+
+                <h4>CASA CAPULETO</h4>
+
+                <p class="venue-text">
+                    Nos encantará celebrar con ustedes
+                    esta noche tan especial.
+                </p>
+
+                <a href="https://maps.app.goo.gl/CMNV9j2UJnT3NY7h6" target="_blank" class="maps-btn">
+                    📍 Cómo llegar
+                </a>
+                <p class="maps-note">
+                    Se abrirá Google Maps
+                </p>
+
+            </div>
+
+        </div>
+
+        <section class="foto-principal">
+            <img src="assets/img/recepcion.jpg">
+        </section>
+
+        <!--Esta es la sección del vestuario-->
+        <section class="dress-code reveal">
+
+            <div class="section-header">
+                <h2>Dress Code</h2>
+            </div>
+
+            <p class="dress-text">
+                Formal Elegante
             </p>
+
+            <img src="assets/img/dresscode.jpg" alt="Dress Code" class="dress-image">
+
+            <p class="dress-note">
+                Te invitamos a vestir tonos acordes a la celebración.
+            </p>
+            <p class="dress-note">
+                Formal elegante.
+                Sugerimos evitar tonos marfil o blanco.
+            </p>
+        </section>
+
+    </section>
+    <!-- Agregando Mesa de regalos -->
+    <section class="gift-section reveal">
+
+        <div class="section-header-light">
+            <h2>Mesa de Regalos</h2>
+        </div>
+
+        <div class="gift-circle">
+
+            <p class="gift-name">
+                Mara Esthela Márquez Arizuznaga
+            </p>
+
+            <p class="gift-bank">
+                Banco BBVA
+            </p>
+
+            <p class="gift-clabe-label">
+                CLABE
+            </p>
+
+            <p class="gift-clabe">
+                012580015301993089
+            </p>
+
+            <button class="copy-btn" onclick="copyClabe()">
+                Copiar CLABE
+            </button>
 
         </div>
 
     </section>
-
     <section class="rsvp reveal">
 
         <h2>Confirmación de Asistencia</h2>
@@ -274,7 +346,25 @@
 
     <script src="assets/js/countdown.js"></script>
     <script src="assets/js/main.js"></script>
+    <script src="assets/js/countdown.js"></script>
+    <script src="assets/js/main.js"></script>
 
+    <script>
+
+        function copyClabe() {
+
+            navigator.clipboard.writeText(
+                "012580015301993089"
+            );
+
+            alert("Haz copiado una CLABE interbancaria de los novios: Mara y Víctor! Ahora puedes pegarla en tu aplicación bancaria para realizar la transferencia.");
+        }
+
+    </script>
+
+</body>
+
+</html>
 </body>
 
 </html>
