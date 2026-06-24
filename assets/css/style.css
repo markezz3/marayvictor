@@ -210,11 +210,32 @@ footer h2 {
 }
 
 .historia-img {
+
   width: 100%;
+
   border-radius: 20px;
+
   margin-bottom: 40px;
+
+  transition: all .5s ease;
+
+  filter:
+    contrast(1.03)
+    saturate(1.05);
+
+  box-shadow:
+    0 20px 40px rgba(0,0,0,.08);
 }
 
+.historia-img:hover {
+
+  transform:
+    scale(1.02)
+    translateY(-5px);
+
+  box-shadow:
+    0 25px 50px rgba(0,0,0,.15);
+}
 .historia-texto {
   text-align: center;
 }
@@ -514,143 +535,133 @@ footer h2 {
   border-radius: 12px;
 }
 .dress-code {
-    text-align: center;
+  text-align: center;
 
-    padding: 80px 20px;
+  padding: 80px 20px;
 }
 
 .dress-text {
-    font-family: 'Cormorant Garamond', serif;
+  font-family: "Cormorant Garamond", serif;
 
-    font-size: 2rem;
+  font-size: 2rem;
 
-    color: var(--burgundy);
+  color: var(--burgundy);
 
-    margin-bottom: 30px;
+  margin-bottom: 30px;
 }
 
 .dress-image {
-    width: 100%;
+  width: 100%;
 
-    max-width: 900px;
+  max-width: 900px;
 
-    border-radius: 12px;
+  border-radius: 12px;
 
-    display: block;
+  display: block;
 
-    margin: 0 auto;
+  margin: 0 auto;
 
-    box-shadow:
-        0 10px 30px rgba(0,0,0,.08);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
 }
 
 .dress-note {
-    max-width: 500px;
+  max-width: 500px;
 
-    margin: 25px auto 0;
+  margin: 25px auto 0;
 
-    color: #777;
+  color: #777;
 
-    line-height: 1.8;
+  line-height: 1.8;
 
-    font-style: italic;
+  font-style: italic;
 }
 .gift-section {
+  background: #5f6368;
 
-    background: #5f6368;
+  padding: 100px 20px;
 
-    padding: 100px 20px;
-
-    text-align: center;
+  text-align: center;
 }
 
 .section-header-light h2 {
+  font-family: "Cormorant Garamond", serif;
 
-    font-family: 'Cormorant Garamond', serif;
+  font-size: 3.5rem;
 
-    font-size: 3.5rem;
+  color: var(--ivory);
 
-    color: var(--ivory);
+  font-weight: 400;
 
-    font-weight: 400;
-
-    margin-bottom: 40px;
+  margin-bottom: 40px;
 }
 
 .gift-circle {
+  width: 350px;
+  height: 350px;
 
-    width: 350px;
-    height: 350px;
+  margin: 0 auto;
 
-    margin: 0 auto;
+  background: var(--burgundy);
 
-    background: var(--burgundy);
+  border-radius: 50%;
 
-    border-radius: 50%;
+  display: flex;
 
-    display: flex;
+  flex-direction: column;
 
-    flex-direction: column;
+  justify-content: center;
 
-    justify-content: center;
+  align-items: center;
 
-    align-items: center;
+  padding: 40px;
 
-    padding: 40px;
-
-    color: white;
+  color: white;
 }
 
 .gift-name {
+  font-size: 0.95rem;
 
-    font-size: .95rem;
+  margin-bottom: 25px;
 
-    margin-bottom: 25px;
-
-    text-align: center;
+  text-align: center;
 }
 
 .gift-bank {
+  font-weight: 600;
 
-    font-weight: 600;
-
-    margin-bottom: 8px;
+  margin-bottom: 8px;
 }
 
 .gift-clabe-label {
+  opacity: 0.8;
 
-    opacity: .8;
-
-    margin-bottom: 5px;
+  margin-bottom: 5px;
 }
 
 .gift-clabe {
+  font-size: 1.1rem;
 
-    font-size: 1.1rem;
+  letter-spacing: 1px;
 
-    letter-spacing: 1px;
-
-    margin-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 .copy-btn {
+  border: 1px solid rgba(255, 255, 255, 0.4);
 
-    border: 1px solid rgba(255,255,255,.4);
+  background: transparent;
 
-    background: transparent;
+  color: white;
 
-    color: white;
+  padding: 10px 20px;
 
-    padding: 10px 20px;
+  border-radius: 30px;
 
-    border-radius: 30px;
+  cursor: pointer;
 
-    cursor: pointer;
-
-    transition: .3s;
+  transition: 0.3s;
 }
 
 .copy-btn:hover {
-
-    background: rgba(255,255,255,.1);
+  background: rgba(255, 255, 255, 0.1);
 }
