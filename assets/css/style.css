@@ -433,10 +433,7 @@ footer h2 {
   60% {
     transform: translateY(-5px);
   }
-}
-.historia-img:hover {
-  transform: translateY(-5px);
-}
+ } 
 .timeline {
   background: white;
 }
