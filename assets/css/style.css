@@ -170,6 +170,9 @@ footer h2 {
 }
 
 @media (max-width: 768px) {
+  .hero-content {
+    transform: translateY(55px);
+  }
   .hero h1 {
     font-size: 3rem;
   }
