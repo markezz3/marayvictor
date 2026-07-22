@@ -73,7 +73,6 @@ body {
 
 .btn {
   display: inline-block;
-  margin-top: 50px; /* <-- nuevo */
 
   padding: 14px 30px;
 
@@ -166,10 +165,10 @@ footer {
   background: #111;
   color: white;
   text-align: center;
-  padding: 60px 20px;
+  padding: 15px 20px;
 }
 .footer-logo {
-  width: 150px;
+  width: 300px;
 
   height: auto;
 
@@ -181,7 +180,7 @@ footer {
 }
 footer h2 {
   font-family: "Cormorant Garamond", serif;
-  font-size: 3rem;
+  font-size: 4rem;
   margin-bottom: 10px;
 }
 footer p {
@@ -190,12 +189,7 @@ footer p {
   font-size: 1rem;
 }
 @media (max-width: 768px) {
-  .btn {
-    margin-top: 60px;
-  }
-  .hero-content {
-    transform: translateY(55px);
-  }
+
   .hero {
     background-position: center 25%;
   }
@@ -556,7 +550,7 @@ footer p {
 .dress-code {
   text-align: center;
 
-  padding: 80px 20px;
+  padding: 10px 20px;
 }
 
 .dress-text {
@@ -566,7 +560,7 @@ footer p {
 
   color: var(--burgundy);
 
-  margin-bottom: 30px;
+  margin-bottom: 10px;
 }
 
 .dress-image {
@@ -588,9 +582,24 @@ footer p {
 
   margin: 25px auto 0;
 
-  color: #777;
+  color: #1a0f0f;
 
-  line-height: 1.8;
+  font-size: 1.25rem;
+
+  line-height: 1.50;
+
+  font-style: bold;
+}
+.dress-note2 {
+  max-width: 500px;
+
+  margin: 5px auto 0;
+
+  color: #362828;
+
+  font-size: 0.95rem;
+
+  line-height: 0.50;
 
   font-style: italic;
 }
@@ -683,4 +692,20 @@ footer p {
 
 .copy-btn:hover {
   background: rgba(255, 255, 255, 0.1);
+}
+.hero-content {
+    position: relative;
+}
+
+.hero-content .btn {
+
+    position: absolute;
+
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    bottom: -400px;
+
+    z-index: 5;
 }
