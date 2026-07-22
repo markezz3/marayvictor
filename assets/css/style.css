@@ -194,7 +194,7 @@ footer p {
   }
 
   .hero h1 {
-    font-size: 3rem;
+    font-size: 2.4rem;
   }
   .hero-content {
     width: 90%;
@@ -718,7 +718,7 @@ footer p {
 
   left: 50%;
 
-  bottom: 60px;
+  bottom: 10%;
 
   transform: translateX(-50%);
 
