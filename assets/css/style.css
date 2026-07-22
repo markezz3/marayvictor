@@ -72,17 +72,17 @@ body {
 }
 
 .btn {
-    display: inline-block;
+  display: inline-block;
 
-    padding: 14px 30px;
+  padding: 14px 30px;
 
-    border: 1px solid var(--burgundy);
+  border: 1px solid var(--burgundy);
 
-    color: white;
+  color: white;
 
-    text-decoration: none;
+  text-decoration: none;
 
-    transition: .3s;
+  transition: 0.3s;
 }
 
 .btn:hover {
@@ -189,7 +189,6 @@ footer p {
   font-size: 1rem;
 }
 @media (max-width: 768px) {
-
   .hero {
     background-position: center 25%;
   }
@@ -197,7 +196,25 @@ footer p {
   .hero h1 {
     font-size: 3rem;
   }
+  .hero-content {
+    width: 90%;
 
+    margin: 0 auto;
+
+    text-align: center;
+  }
+
+  .hero h1 {
+    font-size: 2.6rem;
+
+    white-space: nowrap;
+  }
+
+  .frase {
+    font-size: 1rem;
+
+    line-height: 1.5;
+  }
   .fecha {
     font-size: 1.1rem;
   }
@@ -586,7 +603,7 @@ footer p {
 
   font-size: 1.25rem;
 
-  line-height: 1.50;
+  line-height: 1.5;
 
   font-style: bold;
 }
@@ -599,7 +616,7 @@ footer p {
 
   font-size: 0.95rem;
 
-  line-height: 0.50;
+  line-height: 0.5;
 
   font-style: italic;
 }
@@ -694,17 +711,16 @@ footer p {
   background: rgba(255, 255, 255, 0.1);
 }
 .hero-content {
-    position: relative;
+  position: relative;
 }
 .hero .btn {
+  position: absolute;
 
-    position: absolute;
+  left: 50%;
 
-    left: 50%;
+  bottom: 60px;
 
-    bottom: 60px;
+  transform: translateX(-50%);
 
-    transform: translateX(-50%);
-
-    z-index: 10;
+  z-index: 10;
 }
