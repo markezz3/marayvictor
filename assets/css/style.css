@@ -213,8 +213,11 @@ footer p {
   .frase {
     font-size: 1rem;
 
+    margin-bottom: 50px;
+
     line-height: 1.5;
   }
+  
   .fecha {
     font-size: 1.1rem;
   }
