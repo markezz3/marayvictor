@@ -72,17 +72,17 @@ body {
 }
 
 .btn {
-  display: inline-block;
+    display: inline-block;
 
-  padding: 14px 30px;
+    padding: 14px 30px;
 
-  border: 1px solid var(--burgundy);
+    border: 1px solid var(--burgundy);
 
-  color: white;
+    color: white;
 
-  text-decoration: none;
+    text-decoration: none;
 
-  transition: 0.3s;
+    transition: .3s;
 }
 
 .btn:hover {
@@ -696,16 +696,15 @@ footer p {
 .hero-content {
     position: relative;
 }
-
-.hero-content .btn {
+.hero .btn {
 
     position: absolute;
 
     left: 50%;
 
+    bottom: 60px;
+
     transform: translateX(-50%);
 
-    bottom: -400px;
-
-    z-index: 5;
+    z-index: 10;
 }
