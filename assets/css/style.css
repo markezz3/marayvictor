@@ -168,7 +168,7 @@ footer {
   padding: 15px 20px;
 }
 .footer-logo {
-  width: 300px;
+  width: 200px;
 
   height: auto;
 
@@ -602,7 +602,7 @@ footer p {
 
   margin: 25px auto 0;
 
-  color: #1a0f0f;
+  color: #382121;
 
   font-size: 1.25rem;
 
@@ -615,9 +615,9 @@ footer p {
 
   margin: 5px auto 0;
 
-  color: #362828;
+  color: #8d7575;
 
-  font-size: 0.95rem;
+  font-size: 0.75rem;
 
   line-height: 1.5;
 
