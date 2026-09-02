@@ -1,0 +1,257 @@
+/* ========================================
+   MENÚ MARA & VICTOR
+======================================== */
+
+:root {
+    --navy: #203b5b;
+    --ivory: #f8f3f0;
+    --gold: #c49a52;
+}
+
+
+/* RESET */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* BODY */
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+body {
+    background: var(--ivory);
+    color: var(--navy);
+    font-family: Arial, sans-serif;
+}
+
+
+/* CONTENEDOR */
+
+.menu {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+
+
+/* PÁGINAS */
+
+.menu-page {
+    position: absolute;
+    inset: 0;
+
+    width: 100%;
+    height: 100%;
+
+    background: var(--ivory);
+
+    display: none;
+}
+
+.menu-page.active {
+    display: block;
+}
+
+
+/* CONTENIDO */
+
+.page-content {
+    width: 100%;
+    height: 100%;
+
+    padding: 35px 30px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+/* PORTADA */
+
+.portada {
+    justify-content: center;
+}
+
+.menu-title {
+    font-family: Georgia, serif;
+    font-size: 72px;
+    margin-bottom: 20px;
+}
+
+.names {
+    text-align: center;
+    margin-top: 80px;
+}
+
+.names h1 {
+    font-family: Georgia, serif;
+    font-size: 72px;
+    font-weight: normal;
+}
+
+.ampersand {
+    font-family: Georgia, serif;
+    font-size: 70px;
+    margin: 10px 0;
+}
+
+
+/* HEADER */
+
+.menu-header {
+    width: 100%;
+    text-align: center;
+}
+
+.menu-header h1 {
+    font-family: Georgia, serif;
+    font-size: 70px;
+    font-weight: normal;
+}
+
+
+/* ORNAMENTO */
+
+.ornament {
+    width: 250px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin: 20px auto 60px;
+}
+
+.ornament span:first-child,
+.ornament span:last-child {
+    height: 1px;
+    background: var(--navy);
+    flex: 1;
+}
+
+.ornament-symbol {
+    font-size: 25px;
+    margin: 0 8px;
+}
+
+
+/* SECCIONES */
+
+.menu-section {
+    width: 100%;
+    max-width: 600px;
+
+    text-align: center;
+
+    margin-bottom: 70px;
+}
+
+.menu-section h2,
+.drink-section h2 {
+    font-family: Georgia, serif;
+    font-size: 36px;
+    font-weight: normal;
+
+    margin-bottom: 40px;
+}
+
+.menu-section p {
+    font-size: 21px;
+    line-height: 1.45;
+
+    margin-bottom: 35px;
+}
+
+
+/* BEBIDAS */
+
+.bebidas {
+    margin-top: 220px;
+}
+
+
+/* PRECIOS */
+
+.drink-section {
+    width: 100%;
+    max-width: 620px;
+    margin-bottom: 25px;
+}
+
+.drink-section h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.drink-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    gap: 20px;
+
+    margin-bottom: 28px;
+
+    font-size: 18px;
+    line-height: 1.25;
+}
+
+.drink-item span {
+    flex: 1;
+}
+
+.drink-item strong {
+    white-space: nowrap;
+}
+
+.drink-item small {
+    font-size: 16px;
+}
+
+
+/* CELULAR */
+
+@media (max-width: 600px) {
+
+    .page-content {
+        padding: 30px 25px;
+    }
+
+    .menu-title,
+    .menu-header h1 {
+        font-size: 58px;
+    }
+
+    .names h1 {
+        font-size: 64px;
+    }
+
+    .ampersand {
+        font-size: 60px;
+    }
+
+    .menu-section h2,
+    .drink-section h2 {
+        font-size: 30px;
+    }
+
+    .menu-section p {
+        font-size: 18px;
+    }
+
+    .drink-item {
+        font-size: 16px;
+    }
+
+}
