@@ -179,27 +179,30 @@ body {
 .bebidas {
     width: 100%;
     max-width: 600px;
-    margin-top: 180px;
+    margin-top: 10%;
     text-align: center;
+}
+
+.bebidas h2 {
+    margin-bottom: 105px;
 }
 
 .bebida-item {
     width: 100%;
     text-align: center;
-    margin-bottom: 35px;
+    margin-bottom: 54px;
 }
 
 .bebida-item h3 {
     font-family: Georgia, serif;
     font-size: 26px;
     font-weight: normal;
-    text-transform: uppercase;
-    margin: 0;
+    margin: 0 0 8px 0;
 }
 
 .bebida-item p {
     font-size: 18px;
-    margin-top: 8px;
+    margin: 0;
 }
 
 
