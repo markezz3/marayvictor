@@ -33,13 +33,6 @@
                     <h1>Victor</h1>
                 </div>
 
-                <div class="swipe-hint" aria-hidden="true">
-                    <div class="swipe-hand">
-                        <span class="swipe-finger"></span>
-                    </div>
-                    <span class="swipe-arrow"></span>
-                </div>
-
             </div>
 
         </section>
@@ -271,70 +264,6 @@
 -->
     </main>
 
-
-    <script>
-        (function () {
-            const hint = document.querySelector('.swipe-hint');
-            const menu = document.querySelector('.menu');
-
-            if (!hint || !menu) return;
-
-            let timer;
-            let cycleTimer;
-            let touchStartX = null;
-
-            function showHint() {
-                hint.classList.remove('is-hidden');
-                void hint.offsetWidth;
-                hint.classList.add('is-playing');
-
-                clearTimeout(timer);
-                timer = setTimeout(() => {
-                    hint.classList.remove('is-playing');
-                    hint.classList.add('is-hidden');
-                }, 3600);
-            }
-
-            function scheduleHint() {
-                clearTimeout(cycleTimer);
-                cycleTimer = setTimeout(() => {
-                    showHint();
-                    scheduleHint();
-                }, 14000);
-            }
-
-            function hideHintPermanently() {
-                clearTimeout(timer);
-                clearTimeout(cycleTimer);
-                hint.classList.remove('is-playing');
-                hint.classList.add('is-hidden', 'user-interacted');
-            }
-
-            menu.addEventListener('touchstart', function (event) {
-                if (event.touches.length === 1) {
-                    touchStartX = event.touches[0].clientX;
-                }
-            }, { passive: true });
-
-            menu.addEventListener('touchend', function (event) {
-                if (touchStartX === null) return;
-
-                const touchEndX = event.changedTouches[0].clientX;
-                const distance = touchEndX - touchStartX;
-
-                if (Math.abs(distance) > 35) {
-                    hideHintPermanently();
-                }
-
-                touchStartX = null;
-            }, { passive: true });
-
-            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
-                setTimeout(showHint, 1800);
-                scheduleHint();
-            }
-        })();
-    </script>
 
     <script src="assets/js/menu.js"></script>
 
