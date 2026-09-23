@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#5f6368">
+  <meta name="description"
+    content="Gracias por acompañarnos en nuestra historia. Aquí encontrarás nuestra mesa de regalos.">
+  <meta property="og:title" content="Mesa de Regalos | Mara & Víctor">
+  <meta property="og:description"
+    content="Tu cariño y compañía son nuestro mejor regalo. Si deseas hacernos un detalle, aquí encontrarás nuestra mesa de regalos.">
+  <meta property="og:url" content="https://marayvictor.com/mesaderegalos/">
+  <meta property="og:type" content="website">
+  <title>Mesa de Regalos | Mara &amp; Víctor</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500&family=Montserrat:wght@400;500;600&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="mesa.css">
+</head>
+
+<body>
+  <main class="gift-page">
+    <section class="gift-content" aria-labelledby="page-title">
+      <a class="back-link" href="https://marayvictor.com/" aria-label="Volver a la página de Mara y Víctor">← Volver a
+        nuestra invitación</a>
+
+      <h1 id="page-title">Mesa de Regalos</h1>
+      <p class="intro">Lo más importante para nosotros es compartir este día contigo. Gracias por acompañarnos y ser
+        parte de nuestra historia.</p>
+
+      <div class="gift-circle" aria-label="Datos para regalo por transferencia bancaria">
+        <p class="gift-name">Mara Esthela Márquez Ariguznaga</p>
+        <p class="gift-bank">Banco BBVA</p>
+        <p class="gift-clabe-label">CLABE interbancaria</p>
+        <p class="gift-clabe" id="clabe">012580015301993089</p>
+        <button class="copy-btn" id="copy-button" type="button">Copiar CLABE</button>
+        <p class="copy-status" id="copy-status" role="status" aria-live="polite"></p>
+      </div>
+      <p class="transfer-note">Puedes pegar la CLABE en la aplicación de tu banco para realizar una transferencia.</p>
+      <a class="home-button" href="https://marayvictor.com/">Conoce nuestra historia</a>
+
+  </main>
+  <footer class="site-footer">
+    <a href="https://marayvictor.com/" aria-label="Ir a la página principal de Mara y Víctor">
+      <img src="../assets/img/firma.png" alt="Firma de Mara y Víctor" class="footer-logo">
+    </a>
+  </footer>
+  <script>
+    const copyButton = document.getElementById('copy-button');
+    const copyStatus = document.getElementById('copy-status');
+    const clabe = document.getElementById('clabe').textContent.trim();
+
+    copyButton.addEventListener('click', async () => {
+      try {
+        await navigator.clipboard.writeText(clabe);
+        copyStatus.textContent = 'CLABE copiada. Ya puedes pegarla en tu aplicación bancaria.';
+      } catch (error) {
+        const field = document.createElement('textarea');
+        field.value = clabe;
+        field.setAttribute('readonly', '');
+        field.style.position = 'fixed';
+        field.style.opacity = '0';
+        document.body.appendChild(field);
+        field.select();
+        const copied = document.execCommand('copy');
+        field.remove();
+        copyStatus.textContent = copied
+          ? 'CLABE copiada. Ya puedes pegarla en tu aplicación bancaria.'
+          : 'No se pudo copiar automáticamente. Mantén presionada la CLABE para copiarla.';
+      }
+    });
+  </script>
+</body>
+
+</html>
